@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+    background: radial-gradient(circle at center, #02140d, #000);
+}
+
+
+.painel-final {
+    padding: 60px 40px;
+    border-radius: 25px;
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+    border: 2px solid #22c55e;
+    box-shadow: 0 0 40px rgba(34, 197, 94, 0.4);
+    animation: aparecer 0.8s ease;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+
+.vitoria {
+    background: linear-gradient(145deg, #065f46, #047857);
+    color: #ecfdf5;
+}
+
+.vitoria h1 {
+    color: #22c55e;
+    text-shadow: 0 0 20px #22c55e;
+}
+
+
+.derrota {
+    background: linear-gradient(145deg, #022c22, #02140d);
+    color: #bbf7d0;
+}
+
+.derrota h1 {
+    color: #16a34a;
+}
+
+
+#acertos-info {
+    margin: 20px 0 30px;
+}
+
+
+.painel-final button {
+    padding: 15px 35px;
+    border-radius: 30px;
+    border: none;
+    background: #22c55e;
+    color: #02140d;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.painel-final button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #22c55e;
+}
+
+.painel-final button:active {
+    transform: scale(0.95);
+}
